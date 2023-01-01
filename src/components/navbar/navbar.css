@@ -1,0 +1,83 @@
+.navbar {
+  z-index: 20;
+  padding: 1em;
+  width: 90%;
+  position: absolute;
+  left: 5%;
+}
+
+.navbar-toggler {
+  color: white;
+  border: none;
+}
+
+.navbar-toggler:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.logo {
+  font-family: var(--main-font-family);
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  transition: 1s;
+}
+
+.logo:hover {
+  color: var(--accent-color);
+  letter-spacing: 3px;
+}
+
+.nav-link {
+  position: relative;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 5px;
+  font-family: var(--second-font-family);
+  transition: 1s;
+}
+.nav-link:hover {
+  letter-spacing: 1px;
+  color: var(--accent-color);
+}
+.p-icon {
+  transform: rotate(-90deg);
+}
+
+.icon {
+  margin: 5px;
+}
+
+.logo-phone {
+  display: none;
+  font-family: var(--main-font-family);
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .1)), url("../../img/cave-blur.jpg");
+    width: 100%;
+    flex-direction: column;
+    border-radius: 5px;
+    left: 0% !important;
+    position: fixed;
+  }
+  .nav-link{
+      font-size: 10px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo-phone {
+    display: flex;
+    font-size: 20px;
+  }
+
+}

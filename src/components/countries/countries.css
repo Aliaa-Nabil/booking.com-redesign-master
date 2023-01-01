@@ -1,0 +1,124 @@
+
+.cell {
+  height: 500px;
+  margin: 0;
+  padding: 5px;
+}
+
+.country {
+  height: 50%;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url("../../img/countries/malta.jpg");
+  background-position: bottom;
+  background-size: cover;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.country:hover {
+  background-blend-mode: luminosity;
+}
+
+.paris {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url("../../img/countries/paris.jpg");
+  background-position: top;
+}
+
+.egypt {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url("../../img/countries/egypt.jpg");
+}
+
+.new-york {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url("../../img/countries/newyork.jpg");
+  background-position: top;
+}
+
+.japan {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url("../../img/countries/japan.jpg");
+}
+
+.dubai {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url("../../img/countries/dubai.jpg");
+}
+
+.canada {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url("../../img/countries/canada.jpg");
+  background-position: top;
+}
+
+.aus {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url("../../img/countries/aus.jpg");
+}
+
+/* //////////////// */
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: var(--second-font-family);
+  transition: 1s;
+}
+
+@media(min-width: 600px) {
+  .card {
+    height: 350px;
+  }
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transform: translateY(calc(100% - 4.5rem));
+}
+
+.country-name {
+  font-size: 30px;
+  margin-top: 20px;
+  font-family: var(--main-font-family);
+  transition: 1s;
+}
+
+.copy {
+  font-size: 14px;
+  font-family: var(--second-font-family);
+  transition: 1s;
+  padding: 10px;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+  background-color: var(--accent-color);
+  transition: 1s;
+}
+
+.btn:hover {
+  border: 1px solid white;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.card:hover .content {
+  transform: translateY(0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 53, 128, .5) 100%);
+}
+
+.card:hover .country-name {
+  letter-spacing: 5px;
+  color: var(--accent-color);
+}

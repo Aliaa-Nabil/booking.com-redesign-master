@@ -1,0 +1,38 @@
+.homeContainer{
+background-image: linear-gradient(0deg ,#003580 0%,black 100%);
+padding: 0% 5%;
+display: flex;
+flex-direction: column;
+}
+
+.title{
+ position: relative;
+ padding: 1rem;
+ margin: 2% 0%;
+ font-size: 40px;
+ font-family: var(--main-font-family);
+ color:  white;
+}
+
+.title::after{
+ height: 1px;
+ background-color: grey;
+ content: "";
+ width: 50%;
+ position: absolute;
+ top: 70%;
+ margin-left: 2%;
+}
+
+@media screen and (max-width: 991px) {
+
+ .title {
+   font-size: 30px;
+  }
+
+ .title::after {
+   width: 20%;
+   margin-left: 2%;
+  }
+
+}

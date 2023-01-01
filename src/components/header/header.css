@@ -1,0 +1,268 @@
+.header {
+  height: 90vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .1)), url("../../img/cave-blur.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative !important
+}
+
+.header-2 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .2)), url("../../img/mountain\ -blur.jpg");
+}
+
+.header-3 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .2)), url("../../img/pink-blur.jpg");
+}
+
+.frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .3)), url("../../img/cave.jpg");
+  background-position: center;
+  background-color: rgba(212, 22, 22, 0.263);
+  background-size: cover;
+  width: 90%;
+  height: 70%;
+  margin-top: 14%;
+  margin-bottom: 16%;
+  border-radius: 15px;
+  border-top: 1px solid white;
+}
+
+.frame-2 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .3)), url("../../img/mountain.jpg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.frame-3 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .3)), url("../../img/pink-mountain.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+h2 {
+  font-size: 9vh;
+  font-family: var(--main-font-family);
+  letter-spacing: 3px;
+  color: white;
+  text-align: center;
+}
+
+.button-main {
+  font-size: 16px;
+  font-family: var(--second-font-family);
+  color: white;
+  font-weight: 600;
+  margin-top: 2em;
+  border: solid transparent 1px;
+  border-radius: 15px;
+  background-color: transparent;
+  padding: 10px 20px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+  transition: 1s;
+}
+
+.button-main:hover {
+  background: var(--accent-color);
+  letter-spacing: 2px;
+}
+
+/* /////////////// */
+.srch-btn {
+  cursor: pointer;
+  font-size: 20px;
+  font-family: var(--second-font-family);
+  letter-spacing: 1px;
+  color: white;
+  background-color: var(--accent-color);
+  border: none;
+  height: 100%;
+  width: 100%;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: 1s;
+  border-left: solid rgba(255, 255, 255, 0.5) 1px;
+
+}
+
+.srch-btn:hover {
+  letter-spacing: 5px;
+  background-color: #e4471364;
+
+}
+
+/* /////////////////////////////////// */
+.socials {
+  display: flex;
+  flex-direction: column;
+  width: 5%;
+  color: white;
+  z-index: 4;
+  position: absolute;
+  bottom: 20%;
+  left: 1%;
+}
+
+.s-icon {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.s-icon:hover {
+  color: var(--accent-color);
+}
+
+/* ////////////////////////// */
+
+.search {
+  position: absolute;
+  bottom: 0%;
+  width: 90%;
+  height: 80px;
+  z-index: 100;
+  margin: 0% 5%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+}
+
+.srch-sec {
+  border-right: solid rgba(255, 255, 255, 0.5) 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.no-brdr {
+  border-right: none;
+}
+
+.search-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-family: var(--second-font-family);
+  color: white;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  outline: none;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.date {
+  z-index: 50;
+  position: absolute;
+  top: 90%;
+}
+
+.options {
+  position: absolute;
+  top: 90%;
+  background-color: black;
+  color: white;
+  font-family: var(--second-font-family);
+  border: solid white 2px;
+
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.option-item {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.option-counter {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.counter-btn {
+  width: 30px;
+  height: 30px;
+  background-color: var(--accent-color);
+  border: solid 1px white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 991px) {
+  .focus-in-contract-bck {
+    -webkit-animation: none !important;
+    animation: none !important;
+  }
+
+  .header {
+    height: 90vh;
+  }
+
+  .frame {
+    height: 50%;
+    margin-top: 8%
+  }
+
+  h2 {
+    font-size: 5vh;
+  }
+
+  .socials {
+    width: 2%;
+  }
+
+  .search {
+    height: 60px;
+    height: fit-content;
+    border: none;
+  }
+
+  .srch-sec {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .1)), url("../../img/cave-blur.jpg");
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+  }
+
+  .srch-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+  }
+
+  .search-input {
+    font-size: 10px;
+  }
+
+  .date {
+    top: 50%
+  }
+
+}

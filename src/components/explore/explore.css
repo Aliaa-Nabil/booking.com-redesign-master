@@ -1,0 +1,90 @@
+.explore {
+  width: 100%;
+  height: 60vh;
+  background-color: var(--main-color);
+}
+.egypt {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url("../../img/egypt/nour-wageh-IBILLYRAW1o-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: 1s;
+}
+
+.dahab {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url("../../img/egypt/dahab.jpg");
+}
+
+.marsa {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url("../../img/egypt/marsaAlam.jpg");
+}
+
+.explore-item {
+  height: 60vh !important;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0% 20%;
+  padding-top: 10%;
+}
+
+h3 {
+  font-size: 6vh;
+  font-family: var(--main-font-family);
+  letter-spacing: 4px;
+  color: white;
+  text-align: start;
+}
+
+.explore-item p {
+  font-family: var(--second-font-family);
+  padding: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+/* ////////////// */
+.explore-btn {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 10%;
+  height: 100%;
+  margin-top: 12%;
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 1 !important;
+}
+
+.new-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.move {
+  transform: translate(70px);
+}
+
+
+@media screen and (max-width: 991px) {
+  .explore-item {
+    padding: 5% 10% !important;
+
+  }
+
+  .explore-item h3 {
+    margin-top: 10%;
+    font-size: 30px !important;
+  }
+
+  .explore-item p {
+    font-size: 14px !important;
+  }
+
+  .explore-btn {
+    margin-top: 25% !important;
+
+  }
+
+  .move {
+    transform: translate(70px);
+  }
+}

@@ -1,0 +1,134 @@
+.trend {
+ height: 80vh;
+ border: 2px solid white;
+}
+
+.prop {
+ height: calc(80vh/3);
+ position: relative;
+ overflow: hidden;
+}
+
+.prop::after {
+ content: "";
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ height: 100%;
+ width: 100%;
+ background: rgba(0, 0, 0, 0.6);
+ cursor: pointer;
+ border: 2px solid white;
+}
+
+.prop h4 {
+ position: absolute;
+ bottom: 0%;
+ left: 50%;
+ transform: translateX(-50%);
+ z-index: 20;
+ font-family: var(--main-font-family);
+ font-size: 20px;
+ color: var(--accent-color);
+ letter-spacing: 1px;
+ cursor: pointer;
+}
+
+.prop:hover:after {
+ background-color: transparent;
+ border: 5px solid white;
+ transition: 1s;
+}
+
+.prop:hover h4 {
+ color: white;
+ text-shadow: black 0px 0px 20px;
+ letter-spacing: 3px;
+ transition: 1s;
+}
+
+.cars {
+ height: 80vh;
+ position: relative;
+ overflow: hidden;
+}
+.cars::after {
+ content: "";
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ height: 100%;
+ width: 100%;
+ background-image: linear-gradient(0deg, #00000094 20%, rgba(0, 0, 0, 0) 100%);
+ cursor: pointer;
+}
+
+.cars-caption {
+ bottom: 0%;
+ left: 0%;
+ width: 100%;
+ height: 40%;
+ position: absolute;
+ padding-left: 10%;
+ z-index: 20;
+}
+
+.cars-caption h5 {
+ font-family: var(--main-font-family);
+ font-size: 60px;
+ color: rgb(255, 255, 255);
+ letter-spacing: 2px;
+ cursor: pointer;
+}
+
+.rev-score p {
+ font-family: var(--second-font-family);
+ background-color: var(--main-color);
+ padding: 5px;
+ border-radius: 10px;
+ border-bottom-left-radius: 0px;
+ color: white;
+ font-size: 20px;
+}
+
+.rev-score h6 {
+ font-family: var(--second-font-family);
+ padding: 10px;
+ color: white;
+ font-size: 20px;
+}
+
+.rev-score small {
+ font-family: var(--second-font-family);
+ padding-top: 15px;
+ color: var(--accent-color);
+}
+
+@media screen and (max-width: 991px) {
+ .trend {
+  height: 100vh !important;
+  margin-bottom: 10px;
+ }
+
+ .cars {
+  height: 100vh !important;
+ }
+
+ .media-car {
+  height: 100%;
+  width: 150% !important;
+ }
+
+ .other {
+  width: 50%;
+ }
+
+ .media-car-2 {
+  width: 100%;
+  height: auto !important;
+ }
+
+ .cars-caption h5 {
+  font-size: 50px !important;
+ }
+}
