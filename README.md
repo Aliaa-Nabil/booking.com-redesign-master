@@ -3,10 +3,8 @@
 
 
 - Redesigned the Landing page of booking.com to be more
-modern and interactive .
-- Developed the website using React .
-- Designed the new page Ui on Adobe Xd
-
+modern and interactive.
+- Developed the website using React.
 
 <img src="https://cdn.dribbble.com/users/7295990/screenshots/20320709/media/8020db1fae818d2a7afb418c6e7e289b.png?compress=1&resize=768x576&vertical=top" alt="booking redesign website Design" />
 
