@@ -1,4 +1,4 @@
-# 🏠 booking.com-website-redesign
+# 🏠 booking.com_website_redesign
 
 
 
@@ -9,12 +9,12 @@ modern and interactive.
 <img src="https://cdn.dribbble.com/users/7295990/screenshots/20320709/media/8020db1fae818d2a7afb418c6e7e289b.png?compress=1&resize=768x576&vertical=top" alt="booking redesign website Design" />
 
 
-## 💻 Live website :
+## 💻 Live_website :
 <a href="https://bookingredesign.vercel.app/">bookingredesign.vercel.app</a>
 ## 🎨 Branding :
 <a href="https://www.behance.net/gallery/160461099/booking-website-redesign-UIUX">booking-redesign-branding</a>
 
-## 📫 Contact me :
+## 📫 Contact_me :
 <br>
 
 <div id="badges" align="left">
